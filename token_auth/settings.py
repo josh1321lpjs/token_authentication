@@ -90,9 +90,9 @@ WSGI_APPLICATION = 'token_auth.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "token_authentication",
+    'default': {
+        'ENGINE': "django.db.backends.postgresql",
+        "NAME": getenv('NAME_DB'),
         "USER": "benito",
         "PASSWORD": "123456",
         "HOST": "127.0.0.1",
